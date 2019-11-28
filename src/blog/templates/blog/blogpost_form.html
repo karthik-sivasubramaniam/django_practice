@@ -1,0 +1,15 @@
+{% extends 'main_left_sidebar.html' %}
+
+{% block content %}
+<h1>{{title}}</h1>
+
+<form method="POST" action="."> {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="{{button_class}}">{{button_text}}</button>
+</form>
+
+{% endblock content %}
+
+{% block sidebar %}
+    <h1>This is sidebar</h1>
+{% endblock sidebar %}

@@ -1,0 +1,13 @@
+{% extends 'main_left_sidebar.html' %}
+
+{% block content %}
+    {% include 'blog/list_inline.html' with blog_post=object truncate=False detail=True %}
+{% endblock content %}
+
+{% block sidebar %}
+    <div class="row">
+        <div class="col-md-2 mx-auto">
+                <img src='https://buyerclub.in/wp-content/uploads/2019/10/Logo.png' width="150px" />
+        </div>
+    </div> 
+{% endblock sidebar %}
